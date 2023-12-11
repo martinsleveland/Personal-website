@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="7contact.css">
     <script src="https://kit.fontawesome.com/1c37d44f1d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logoen.ico" type="image/x-icon"/>
     <title>MSleveland - Contact</title>
 </head>
 <body>
@@ -32,22 +33,23 @@
       <!--NAVIGASJON FERDIG-->
       
       <div class="hero">
-        <form>
+        <form action="https://formsubmit.co/slevelandmartin@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
             <div class="row">
                 <div class="input-group">
-                    <input type="text" id="name" required>
+                    <input type="name" id="name" name="Name" required>
                     <label for="name"><i class="fas fa-user"></i>  What's your name?</label>
                 </div>
                 <div class="input-group">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="Email" required>
                     <label for="email"><i class="fas fa-envelope"></i>  What's your email?</label>
                 </div>
             </div>
             <div class="input-group">
-                <textarea  id="message" rows="8" required></textarea>
+                <textarea type="message" id="message" name="Message" rows="8" required></textarea>
                 <label for="message"><i class="fas fa-comments"></i>  What's on your mind?</label>
             </div>
-            <button type="submit" >SUBMIT</button>
+            <button type="submit" onclick="saveEmail(email, name, message)">SEND</button>
         </form>
     </div>
 
