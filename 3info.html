@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c37d44f1d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="4info2.css">
+    <title>MSleveland - Info</title>
+</head>
+<body>
+    <div class="header">
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="/video2.mp4" type="video/mp4">
+          </video>
+          <!--NAVIGASJON-->
+          <div class="container">
+            <nav class="navbar">
+              <div class="dots-btn">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+              </div>
+              <div class="nav-menu">
+                <a href="index.html" class="nav-menu-link"><i class="fas fa-home"></i></a>
+                <a href="3info.html" class="nav-menu-link"><i class="fas fa-info"></i></a>
+                <a href="6contact.html" class="nav-menu-link"
+                  ><i class="fas fa-envelope"></i></a>
+                <a href="10tos.html" class="nav-menu-link"
+                  ><i class="fas fa-handshake"></i></a>
+              </div>
+            </nav>
+          </div>
+      <!--NAVIGASJON FERDIG-->
+
+      <!--CONTAKT OSV-->
+
+          <script src="script.js"></script>
+            <div class="text-box">
+                <h1>I <span class="auto-input"></span></h1>
+                <p>I currently work at the IT-office at Gand Vgs, <br>
+                  Please contact me if you have any questions!</p></p> <br>
+                <a href="6contact.html">Contact me</a>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+             strings: [" am Martin Sleveland!", " love programming!", " love helping people!"],
+             typeSpeed: 170,
+             backSpeed: 170,
+             loop: true
+        })
+    </script>
+     <!--CONTAKT OSV FERDIG-->
+
+     <!--PERSON-->
+
+     <div class="box">
+       <div class="hair"></div>
+       <div class="bottom">
+         <span></span>
+       </div>
+       <div class="head">
+         <div class="neck">
+           <div class="face">
+             <div class="eyes">
+               <span class="eye"><i></i></span>
+               <span class="eye"><i></i></span>
+             </div>
+             <div class="mouth"></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <script>
+      document.querySelector("body").addEventListener('mousemove', eyeball);
+      function eyeball(){
+          var eye = document.querySelectorAll(".eye i");
+          eye.forEach(function (eye) {
+              let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+              let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+              let radian = Math.atan2(event.pageX - x, event.pageY - y);
+              let rot = (radian * (180 / Math.PI) * -1) + 270;
+              eye.style.transform = "rotate(" + rot + "deg)";
+          });
+      }
+    </script>
+         <!--PERSON FERDIG-->
+
+
+<!--KLOKKE-->
+
+<div class="clock">
+  <div class="hour">
+    <div class="hr" id="hr"></div>
+  </div>
+  <div class="min">
+    <div class="mn" id="mn"></div>
+  </div>
+  <div class="sec">
+    <div class="sc" id="sc"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  const deg = 6;
+  const hr = document.querySelector("#hr");
+  const mn = document.querySelector("#mn");
+  const sc = document.querySelector("#sc");
+  setInterval(() => {
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
+    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+  })
+</script>
+
+<!--KLOKKE FERDIG-->
+
+    <!--FOOTER-->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>General</h2>
+          <p><a href="8copyright1.html">MSleveland © 2023 </a></p>
+          <p><a href="10tos.html">Terms Of Service</a></p>
+          <p> <a href="6contact.html">Need help?</a></p>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>Socials</h2>
+          <p><a href="https://www.youtube.com/">Youtube</a></p>
+          <p><a href="https://www.facebook.com/">Facebook</a></p>
+          <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+
+          <div class="footer-email-form">
+          <h2><p style="color:red">Subscribe to our newsletter!</h2></p>
+          <br>
+          <input type="email" placeholder="Email" id="footer-email">
+          <input type="submit" value="Done" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+    <!--FOOTER FERDIG-->
+</body>
+</html>

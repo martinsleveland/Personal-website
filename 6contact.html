@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7contact.css">
+    <script src="https://kit.fontawesome.com/1c37d44f1d.js" crossorigin="anonymous"></script>
+    <title>MSleveland - Contact</title>
+</head>
+<body>
+
+           <!--NAVIGASJON-->
+           <div class="container">
+            <nav class="navbar">
+              <div class="dots-btn">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+              </div>
+              <div class="nav-menu">
+                <a href="index.html" class="nav-menu-link"><i class="fas fa-home"></i></a>
+                <a href="3info.html" class="nav-menu-link"><i class="fas fa-info"></i></a>
+                <a href="6contact.html" class="nav-menu-link"
+                  ><i class="fas fa-envelope"></i></a>
+                <a href="10tos.html" class="nav-menu-link"
+                  ><i class="fas fa-handshake"></i></a>
+              </div>
+            </nav>
+          </div>
+          <script src="script.js"></script>
+      <!--NAVIGASJON FERDIG-->
+      
+      <div class="hero">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fas fa-user"></i>  What's your name?</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i>  What's your email?</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <textarea  id="message" rows="8" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i>  What's on your mind?</label>
+            </div>
+            <button type="submit" >SUBMIT</button>
+        </form>
+    </div>
+
+    <!--KLOKKE-->
+
+<div class="clock">
+  <div class="hour">
+    <div class="hr" id="hr"></div>
+  </div>
+  <div class="min">
+    <div class="mn" id="mn"></div>
+  </div>
+  <div class="sec">
+    <div class="sc" id="sc"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  const deg = 6;
+  const hr = document.querySelector("#hr");
+  const mn = document.querySelector("#mn");
+  const sc = document.querySelector("#sc");
+  setInterval(() => {
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
+    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+  })
+</script>
+
+<!--KLOKKE FERDIG-->
+</body>
+</html>

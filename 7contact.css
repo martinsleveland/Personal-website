@@ -1,0 +1,327 @@
+body{
+  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    height: 100vh;
+    position: center;
+    background: linear-gradient(rgba(145, 2, 2, 0.1), rgba(145, 2, 2, 0.493)), url(/eksde.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    background: red;
+    opacity: 0.4;
+    z-index: -2;
+}
+
+
+/* NAVIGASJON*/
+  
+.container {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: relative;
+}
+
+.dots-btn {
+  margin-top: 20px;
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+transition: 0.3s ease;
+}
+
+.dots-btn:hover{
+  background: darkred;
+  transition: 0.3s ease;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.change .dot-1 {
+  height: 7rem;
+  width: 0.8rem;
+  border-radius: 1rem;
+  transform: rotate(-45deg) translate(2rem, 2rem);
+}
+
+.change .dot-2 {
+  opacity: 0;
+}
+.change .dot-3 {
+  height: 7rem;
+  width: 0.8rem;
+  border-radius: 1rem;
+  transform: rotate(45deg) translate(-2rem, 2rem);
+}
+
+.nav-menu {
+  margin-top: 30px;
+  width: 0;
+  height: 3.5rem;
+  background-color: rgb(131, 2, 2);
+  padding: 2rem 3rem;
+  border-radius: 5rem;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+  transition: width 0.4s;
+}
+
+.change .nav-menu {
+  width: 46rem;
+}
+
+.nav-menu-link {
+  margin-top: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s;
+}
+
+.change .nav-menu-link {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s 0.4s;
+}
+
+.nav-menu-link:nth-child(1) {
+  left: 4rem;
+}
+
+.nav-menu-link:nth-child(2) {
+  left: 13rem;
+}
+
+.nav-menu-link:nth-child(3) {
+  right: 13rem;
+}
+
+.nav-menu-link:nth-child(4) {
+  right: 4rem;
+}
+
+.nav-menu-link i {
+  font-size: 3rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.nav-menu-link i:hover{
+    color:red;
+    transition: 0.2s;
+}
+
+/*NAVIGASJON SLUTT*/
+
+/*KLOKKÅ*/
+
+.clock{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/clock.png);
+  background-size: cover;
+  border-radius: 50%;
+  background-color: rgb(87, 7, 7);
+  border: 4px solid red;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+}
+
+
+.clock::before
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    z-index: 100000;
+    border-radius: 50%;
+}
+.hour,
+.min,
+.sec
+{
+    position: absolute;
+}
+.hour, .hr
+{
+    width: 125px;
+    height: 125px;
+}
+.min, .mn
+{
+    width: 150px;
+    height: 150px;
+}
+.sec, .sc
+{
+    width: 175px;
+    height: 175px;
+}
+.hr,.mn,.sc
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr::before
+{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: red;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn::before
+{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: white;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc::before
+{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: black;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+/*KLOKKE FERDIG*/
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  position: relative;
+  margin-top: 300px;
+  top: -250px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.input-group{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+input, textarea{
+  top: 10px;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 3px solid red;
+  color: white;
+  background: transparent;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+  font-size: 15px;
+}
+
+label{
+  transition: 0.3s;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: white;
+  cursor: text;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  transition: 0.3s;
+  top: -35px;
+  font-size: 15px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group{
+  flex-basis: 48%;
+}
+
+button{
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px 20px;
+  color: red;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 4px solid red;
+  background: transparent;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+  transition: 0.3s ease;
+}
+
+button:hover{
+  letter-spacing: 10px;
+  width: 100%;
+  color: black;
+  cursor: pointer;
+  box-shadow: inset 0 0 1.25em 0 red,  0 0 1.5em 0 red;
+  background: repeating-radial-gradient(red, rgba(0, 0, 0, 0.418));
+  transition: 0.3s ease;
+}
