@@ -16,9 +16,9 @@ If you deside to contact me through the contact-form on my website, i'll recive 
  LINKS:
 
 LinkedIN: 
-https://www.linkedin.com/in/martin-sleveland/
+[LinkedIN](https://www.linkedin.com/in/martin-sleveland/)
 
-Website: 
+
 [Website](https://martinsleveland.github.io/Personal-website/)
 
 
