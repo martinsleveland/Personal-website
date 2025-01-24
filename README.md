@@ -16,10 +16,10 @@ If you deside to contact me through the contact-form on my website, i'll recive 
  LINKS:
 
 LinkedIN: 
-https://www.linkedin.com/in/martin-sleveland-23993421b/?originalSubdomain=no
+https://www.linkedin.com/in/martin-sleveland/
 
 Website: 
-https://martinsleveland.github.io/
+[Website](https://martinsleveland.github.io/Personal-website/)
 
 
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
