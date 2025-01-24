@@ -15,7 +15,8 @@ If you deside to contact me through the contact-form on my website, i'll recive 
 
  LINKS:
 
-LinkedIN: 
+[Email](mailto:martinslev@gmail.com)
+
 [LinkedIN](https://www.linkedin.com/in/martin-sleveland/)
 
 
