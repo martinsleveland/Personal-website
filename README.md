@@ -3,7 +3,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
  
  DISCLAIMER
 
-Please read the terms of service thoroughly, and understand what the general terms over here: https://martinsleveland.github.io/10tos.html
+Please read the terms of service thoroughly, and understand what the general terms over here: [https://martinsleveland.github.io/10tos.html](https://martinsleveland.github.io/Personal-website/10tos.html)
  
 
  GENERAL INFORMATION
